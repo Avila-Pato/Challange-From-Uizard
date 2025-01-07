@@ -61,6 +61,10 @@ Muestra en la lista:
 
 ---
 
+## Referencia
+
+![Screenshot_7-1-2025_153518_localhost](https://github.com/user-attachments/assets/b78b789c-0c5c-419b-af3b-bd6c58385768)
+
 ## Recursos  
 
 - [Documentación de la API de Hacker News](https://github.com/HackerNews/API)  
@@ -70,3 +74,5 @@ Muestra en la lista:
 ---
 
 ¡Buena suerte y diviértete desarrollando! 🚀
+
+
