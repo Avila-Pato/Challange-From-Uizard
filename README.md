@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Challenge: Uizard Hacker News Reader  
 
-## Getting Started
+## Descripción del Desafío  
 
-First, run the development server:
+Tu tarea es crear una aplicación web sencilla, responsiva e interactiva utilizando **Next.js**, que funcione como lector de noticias de Hacker News. La aplicación debe obtener y mostrar una lista de las principales noticias desde la API de Hacker News. Cada noticia debe incluir el título, el autor y un enlace al artículo completo.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este desafío simula un escenario de desarrollo real en el que implementarás características como estados de carga, uso de suspense para manejar contenido asincrónico y diseño adaptable.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Requisitos del Desafío  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Pantalla Principal  
+- La aplicación debe tener un encabezado fijo con el título **"Uizard Hacker News Reader"**.  
+- La pantalla principal debe estar dividida en dos columnas:  
+  - **Columna izquierda:** Una lista de las principales noticias obtenidas desde la API de Hacker News.  
+  - **Columna derecha:** Una sección para mostrar contenido dinámico (puedes usar un componente `children` para esto).  
 
-## Learn More
+### 2. Características de la Lista de Noticias  
+Muestra en la lista:  
+- El título de la noticia (cortado si es muy largo).  
+- El autor de la noticia.  
+- Un enlace que diga **"Visitar sitio >>"**.  
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Suspense y Estado de Carga  
+- Implementa un estado de carga animado mientras los datos de las noticias se obtienen de la API.  
+- Utiliza el componente `Suspense` de React para manejar la carga de las noticias de manera progresiva.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Rendimiento  
+- Implementa optimización para revalidar los datos cada 10 segundos usando `next.revalidate`.  
+- Simula tiempos de carga aleatorios para cada noticia utilizando una función de retraso (`sleep`).  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 5. Estilo  
+- Usa un diseño limpio y responsivo.  
+- Los elementos de la lista deben estar organizados en una estructura en columnas y filas.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Requisitos Técnicos  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tecnologías  
+- **Next.js** como framework principal.  
+- **CSS o Tailwind CSS** para los estilos.  
+- **Fetch** para solicitudes API.  
+- **React Suspense** para manejar la carga.  
+
+### Extras Opcionales  
+- Implementar un **modo oscuro/claro**.  
+- Hacer el diseño completamente **responsivo para dispositivos móviles**.  
+
+---
+
+## Entrega  
+
+1. Sube tu proyecto a un repositorio público en GitHub.  
+2. Asegúrate de incluir un archivo `README.md` con las siguientes secciones:  
+   - **Descripción del proyecto.**  
+   - **Instrucciones para instalar dependencias y ejecutar el proyecto.**  
+   - **Tecnologías utilizadas.**  
+   - **Capturas de pantalla** (opcional).  
+
+---
+
+## Recursos  
+
+- [Documentación de la API de Hacker News](https://github.com/HackerNews/API)  
+- [Next.js Documentation](https://nextjs.org/docs)  
+- [React Suspense](https://react.dev/reference/react/Suspense)  
+
+---
+
+¡Buena suerte y diviértete desarrollando! 🚀
