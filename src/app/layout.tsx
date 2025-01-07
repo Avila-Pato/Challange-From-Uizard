@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 
-
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 // Skeleton loading 
 function ListItemLoading() {
   return (
@@ -34,6 +34,7 @@ function ListItemLoading() {
 
 
 async function LisItem({ id }: { id: number }) {
+  await sleep(Math.random() * 3000);
   const post = await fetch(
     `https://hacker-news.firebaseio.com/v0/item/${id}.json?print=pretty`
   ).then(
